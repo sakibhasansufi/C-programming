@@ -1,0 +1,41 @@
+// calculator 
+#include<stdio.h>
+int main ()
+{
+    double m,n,s;
+    
+    char op;
+    printf("Choose ypur operator(+,-,*,/)\n");
+    scanf("%c",&op);
+
+    printf("Enetr two numbers\n");
+    scanf("%lf%lf",&m,&n);
+
+    switch(op)
+    {
+        case '+':
+        s= m+n;
+        printf("result is =%.1lf",s);
+        break;
+
+        case '-':
+        s= m-n;
+        printf("result is =%.1lf",s);
+        break;
+
+        case '*':
+        s= m*n;
+        printf("result is =%.1lf",s);
+        
+        case '/':
+        s= m/n;
+        printf("result is =%.1lf",s);
+        break;
+
+        default:
+        printf("nothing");
+
+       
+
+    }
+}
