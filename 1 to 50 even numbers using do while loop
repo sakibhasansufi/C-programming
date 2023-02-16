@@ -2,6 +2,7 @@
 #include<stdio.h>
 int main ()
 {
+printf(" do while loop");
     int i=2;
     do {
             printf("%d\n",i);
