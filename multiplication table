@@ -6,10 +6,7 @@ int main ()
     scanf("%d",&n);
     printf("in what range=",m);
     scanf("%d",&m);
-    /*printf("Which multiplication result you want",m);
-    scanf("%d"&m);*/
-    
-    
+   
     for(i=1;i<=m;i++)
     {
         if (i%n==0)
