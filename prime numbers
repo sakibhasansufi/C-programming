@@ -1,21 +1,22 @@
 #include<stdio.h>
 int main ()
+
 {
-    while(1){
-    int num,count=0,i;
-    printf("Enter any positive number\n",num);
-    scanf("%d",&num);
-    for(i=2;i<num;i++)
+  while(1){
+  int num,i,count=0;
+  printf("Enter any positive number",num);
+  scanf("%d",&num);
+  for (i=2;i<num;i++)
+  {
+    if (num%i==0)
     {
-        if(num%i==0)
-        
-        count++;
-        break;
-        
+    count++;
+    break;
     }
-    if(count==0)
-    printf("Prime number\n",num);
-    else 
-    printf("Not prime\n",num);
-    }
+  }
+  if (count==0)
+  printf("prime\n",num);
+  else
+  printf("not prime\n",num);
+}
 }
