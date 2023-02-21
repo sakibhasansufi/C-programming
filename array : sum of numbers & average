@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+   int arr[200];
+   int sum = 0,n;
+   printf("How many numbers to input: ");
+   scanf("%d",&n);
+   printf("Enter numbers");
+   for(int i = 0; i < n; i++) {
+    scanf("%d", &arr[i]);
+
+   }
+
+  
+
+   for (int i = 0; i < n; i++) {
+      
+      sum += arr[i];
+   }
+
+   printf("The sum of the array is: %d\n", sum);
+   printf("%.2f is average",(float)sum/n);
+
+   return 0;
+}
