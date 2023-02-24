@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main ()
+{
+   int  num []={7,12,45,6,9,75};
+   int i,pos=-1,value;
+   printf("Enter your number");
+   scanf("%d",&value);
+   for (i=0;i<7;i++)
+   {
+    if (value==num[i])
+    {
+        pos=i+1;
+        break;
+    }
+   }
+   if (pos==-1)
+   {
+    printf("Not found",pos);
+   }
+   else 
+   {
+    printf("Number is found\nThe number is at %d position",pos);
+   }
+}
