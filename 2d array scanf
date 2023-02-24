@@ -10,6 +10,7 @@ int main ()
             printf("rp[%d][%d]= ",i,j);
             scanf("%d",&rp[i][j]);
         }
+        printf("\n");
     }
     for(i=0;i<3;i++)
     {
