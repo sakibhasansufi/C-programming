@@ -1,0 +1,49 @@
+#include<stdio.h>
+int main ()
+{
+    int ro[2][2];
+    int rt[2][2];
+    int i,j;
+    for (i=0;i<2;i++)
+    {
+       printf("\n");
+        for(j=0;j<2;j++)
+        {
+            printf("ro[%d][%d]= ",i,j);
+            scanf("%d",&ro[i][j]);
+        }
+    }
+    printf("\nA=\n");
+    
+ for(i=0;i<2;i++)
+ {
+    
+    for(j=0;j<2;j++)
+    {
+        printf("%d  ",ro[i][j]);
+    }
+    printf("\n") ;
+ }  
+  for (i=0;i<2;i++)
+    {
+       printf("\n");
+        for(j=0;j<2;j++)
+        {
+            printf("ro[%d][%d]= ",i,j);
+            scanf("%d",&rt[i][j]);
+        }
+    }
+    printf("\nB=\n");
+    
+ for(i=0;i<2;i++)
+ {
+    
+    for(j=0;j<2;j++)
+    {
+        printf("%d  ",rt[i][j]);
+    }
+    printf("\n") ;
+ }  
+
+
+}
