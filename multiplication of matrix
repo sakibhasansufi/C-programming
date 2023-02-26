@@ -1,0 +1,81 @@
+#include<stdio.h>
+int main ()
+{
+    int ro[10][10];
+    int rt[10][10];
+    int ru[10][10];
+    int tada,bata;
+    printf("How many rows and columns\n");
+    scanf("%d%d",&tada,&bata);
+    int i,j;
+    printf("Enter the numbers\n");
+    // matrix A
+    printf("Matrix  A");
+    for (i=0;i<tada;i++)
+    {
+       printf("\n");
+        for(j=0;j<bata;j++)
+        {
+            printf("ro[%d][%d]= ",i,j);
+            scanf("%d",&ro[i][j]);
+        }
+    }
+    // matrix B
+    printf("Matrix B");
+  for (i=0;i<tada;i++)
+    {
+       printf("\n");
+        for(j=0;j<bata;j++)
+        {
+            printf("ro[%d][%d]= ",i,j);
+            scanf("%d",&rt[i][j]);
+        }
+    }
+    printf("\nA=\n");
+  // Print A  
+ for(i=0;i<tada;i++)
+ {
+    
+    for(j=0;j<bata;j++)
+    {
+        printf("%d  ",ro[i][j]);
+    }
+    printf("\n") ;
+ }  
+ 
+    printf("\nB=\n");
+  // printf B  
+ for(i=0;i<tada;i++)
+ {
+    
+    for(j=0;j<bata;j++)
+    {
+        printf("%d  ",rt[i][j]);
+    }
+    printf("\n") ;
+ }  
+ printf("\nB=\n");
+  // addition of matrix
+ for(i=0;i<tada;i++)
+ {
+    
+    for(j=0;j<bata;j++)
+    {
+        ru[i][j]=ro[i][j]+rt[i][j];
+    }
+    
+ }  
+ printf("\nResult=\n");
+  // result
+ for(i=0;i<tada;i++)
+ {
+    
+    for(j=0;j<bata;j++)
+    {
+        printf("%d  ",ru[i][j]);
+    }
+    printf("\n") ;
+ }  
+
+
+}
